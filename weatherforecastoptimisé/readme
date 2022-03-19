@@ -1,0 +1,52 @@
+function get_cities_datas(){
+  citiescolumn = document.getElementById("citiescolumn")
+
+  city1 = openweather_city_url+'?'+ 'q=' + "Paris"+ '&appid=' + APIKEY_WEATHER_2
+  $.get(city1, function(data){
+    var city1 = document.createElement('div')
+    city1.classList.add("citiescolumn")
+    weatherdescription1 = data["weather"]["0"]["description"]
+    icon1 = data["weather"]["0"]["icon"]
+    citiescolumn.innerText = weatherdescription1})
+
+  city2 = openweather_city_url+'?'+ 'q=' + "New-york"+ '&appid=' + APIKEY_WEATHER_2
+  $.get(city2, function(data){
+    var city2 = document.createElement('div')
+    city2.classList.add("citiescolumn")
+    weatherdescription2 = data["weather"]["0"]["description"]
+    icon2 = data["weather"]["0"]["icon"]
+    citiescolumn.innerText = weatherdescription2})
+
+  city3 = openweather_city_url+'?'+ 'q=' + "Madrid"+ '&appid=' + APIKEY_WEATHER_2
+  $.get(city3, function(data){
+    var city2 = document.createElement('div')
+    city2.classList.add("citiescolumn")
+    weatherdescription3 = data["weather"]["0"]["description"]
+    icon3 = data["weather"]["0"]["icon"]
+    citiescolumn.innerText = weatherdescription3})
+
+  city4 = openweather_city_url+'?'+ 'q=' + "Lille"+ '&appid=' + APIKEY_WEATHER_2
+  $.get(city4, function(data){
+    var city2 = document.createElement('div')
+    city2.classList.add("citiescolumn")
+    weatherdescription4 = data["weather"]["0"]["description"]
+    icon4 = data["weather"]["0"]["icon"]
+    citiescolumn.innerText = weatherdescription4})
+
+  city5 = openweather_city_url+'?'+ 'q=' + "Berlin"+ '&appid=' + APIKEY_WEATHER_2
+  $.get(city5, function(data){
+    var city2 = document.createElement('div')
+    city2.classList.add("citiescolumn")
+    weatherdescription5 = data["weather"]["0"]["description"]
+    icon5 = data["weather"]["0"]["icon"]
+    citiescolumn.innerText = weatherdescription5})
+
+  city6 = openweather_city_url+'?'+ 'q=' + "Tokyo"+ '&appid=' + APIKEY_WEATHER_2
+  $.get(city6, function(data){
+    var city2 = document.createElement('div')
+    city2.classList.add("citiescolumn")
+    weatherdescription6 = data["weather"]["0"]["description"]
+    icon6 = data["weather"]["0"]["icon"]
+    citiescolumn.innerText = weatherdescription6})
+}
+console.log(get_cities_datas())

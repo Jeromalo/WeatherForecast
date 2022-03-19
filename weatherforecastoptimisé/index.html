@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonAppMeteo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titleboxes">
+        <canvas id="scene"></canvas>
+        <h1>The </h1>
+        <h1 class="weather">Weather </h1>
+        <h1>App.</h1>
+    </div>
+    <form id="formID">
+        <div class=inputboxes>
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" id="cityID" class="searchTerm" name="cityName" placeholder="Enter a city">
+                   <button type="submit" class="searchButton" value="search">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+                    <select class="select" name="days" id="day-select">
+                        <option value="" selected>--1 to 7 days--</option>
+                        <option value="1">1 day</option>
+                        <option value="2">2 days</option>
+                        <option value="3">3 days</option>
+                        <option value="4">4 days</option>
+                        <option value="5">5 days</option>
+                        <option value="6">6 days</option>
+                        <option value="7">7 days</option>
+                    </select>
+             </div>
+        </div>
+        <!-- output JS ville -->
+        <br>
+        <p class="resumephrase"><span id="mavilleID"> </span></p>
+        <br>
+        <div class="weatherboxes" id="weatherboxes"></div>
+    <div class="wrapper">
+    <section class="columns">
+        <div class="column">
+            <div class="sign-column">
+            <h2>Want your daily astro ?</h2>
+            <select class="select" name="signselect" id="sign-select" onchange=get_horoscope()>
+                <option value="" selected>--select your sign--</option>
+                <option value="aquarius">Aquarius</option>
+                <option value="pisces">Pisces</option>
+                <option value="aries">Aries</option>
+                <option value="taurus">Taurus</option>
+                <option value="gemini">Gemini</option>
+                <option value="cancer">Cancer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="scorpio">Scorpio</option>
+                <option value="sagittarius">Sagittarius</option>
+                <option value="capricorn">Capricorn</option>
+            </select>
+            </div>
+        </div>
+        <div class="column" id="citiescolumn">
+            <div class="footer-forecasts__item">
+                <a href="https://www.meteo-angers.com" class="footer-forecasts__item--link">
+                    <span class="footer-forecasts__item--title">https://www.meteo-angers.com</span>
+                </a>
+            </div>
+            <div class="footer-forecasts__item">
+                <a href="https://www.meteo-paris.com" class="footer-forecasts__item--link">
+                    <span class="footer-forecasts__item--title">https://www.meteo-paris.com</span>
+                </a>
+            </div>
+            <div class="footer-forecasts__item">
+                <a href="https://www.meteo-rennes.com" class="footer-forecasts__item--link">
+                    <span class="footer-forecasts__item--title">https://www.meteo-rennes.com</span>
+                </a>
+            </div>
+            <div class="footer-forecasts__item">
+                <a href="https://www.meteo-bordeaux.com" class="footer-forecasts__item--link">
+                    <span class="footer-forecasts__item--title">https://www.meteo-bordeaux.com</span>
+                </a>
+            </div>
+            <div class="footer-forecasts__item">
+                <a href="https://www.meteo-nice.com" class="footer-forecasts__item--link">
+                    <span class="footer-forecasts__item--title">https://www.meteo-nice.com</span>
+                </a>
+            </div>
+            <div class="footer-forecasts__item">
+                <a href="https://www.meteo-lyon.com" class="footer-forecasts__item--link">
+                    <span class="footer-forecasts__item--title">https://www.meteo-lyon.com</span>
+                </a>
+            </div>
+            <div class="footer-forecasts__item">
+                <a href="https://www.meteo-lille.com" class="footer-forecasts__item--link">
+                    <span class="footer-forecasts__item--title">https://www.meteo-lille.com</span>
+                </a>
+            </div>
+        </div>
+         <div class="column">
+            <div class="air-column" id="citationcolumn">
+                <script language="javascript" src="https://www.ephemeride.com/free/dicton.jsp" charset="iso-8859-1"></script>
+            </div>
+        </div>
+    </section>
+    </div>
+    </form>
+    <footer>
+            <p class="footer-text">Copyright 2022 - Jeromalo</p>
+            <p class="footer-text">Droits de reproduction et de diffusion réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a162d36f65.js" crossorigin="anonymous"></script>
+</body>
+</html>
