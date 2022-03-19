@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonAppMeteo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titleboxes">
+        <canvas id="scene"></canvas>
+        <h1>The </h1>
+        <h1 class="weather">Weather </h1>
+        <h1>App.</h1>
+    </div>
+    <form id="formID">
+        <br>
+        <br>
+        <div class=inputboxes>
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" id="cityID" class="searchTerm" name="cityName" placeholder="Enter a city">
+                   <button type="submit" class="searchButton" value="search">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+             </div>
+        </div>
+        <br>
+        <br>
+        <!-- output JS ville -->
+        <p class="resumephrase"><span id="mavilleID"> </span></p>
+        <br>
+        <br>
+        <div class="alldays">
+            <div class="day" id="day1">
+                <!-- output JS day -->
+                <span class="dayCSS" id="dateID0"></span>
+                <br>
+                <!-- output météo -->
+                <span class="meteoCSS" id="mameteoID0"></span>
+                <!-- output JS icône météo -->
+                <img id="iconID0" src=""/>
+            </div>
+            <div class="day" id="day2">
+                <!-- output JS day -->
+                <span class="dayCSS" id="dateID1"></span>
+                <br>
+                <!-- output météo -->
+                <span class="meteoCSS" id="mameteoID1"></span>
+                <!-- output JS icône météo -->
+                <img id="iconID1" src=""/>
+            </div>
+            <div class="day" id="day3">
+                <!-- output JS day -->
+                <span class="dayCSS" id="dateID2"></span>
+                <br>
+                <!-- output météo -->
+                <span class="meteoCSS" id="mameteoID2"></span>
+                <!-- output JS icône météo -->
+                <img id="iconID2" src=""/>
+            </div>
+            <div class="day" id="day4">
+                <!-- output JS day -->
+                <span class="dayCSS" id="dateID3"></span>
+                <br>
+                <!-- output météo -->
+                <span class="meteoCSS" id="mameteoID3"></span>
+                <!-- output JS icône météo -->
+                <img id="iconID3" src=""/>
+            </div>
+            <div class="day" id="day5">
+                <!-- output JS day -->
+                <span class="dayCSS" id="dateID4"></span>
+                <br>
+                <!-- output météo -->
+                <span class="meteoCSS" id="mameteoID4"></span>
+                <!-- output JS icône météo -->
+                <img id="iconID4" src=""/>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a162d36f65.js" crossorigin="anonymous"></script>
+</body>
+</html>
