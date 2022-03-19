@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}  */
+
+body {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  }
+
+/* Logo et titre */
+.titleboxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+canvas {
+    width:98vmin;
+    height:98vmin;
+  }
+.weather{
+    color: rgb(34, 118, 156)
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* fin logo et titre */
+
+
+/* barre de recherche */
+.inputboxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: rgb(34, 118, 156);
+}
+.searchTerm:focus{
+    color: rgb(34, 118, 156);
+}
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: rgb(34, 118, 156);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 30%;
+    position: absolute;
+}
+/* end searchbar */
+.resumephrase{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.alldays{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.day{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.dayCSS{
+    text-align: center;
+}
+.meteoCSS{
+    text-align: center;
+}
+.iconcat{
+    height: 300px;
+    width: 300px;
+}
+.iconID{
+    justify-content: center;
+    width: 200px;
+}
+.dateID{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formID{
+    align-items: center;
+    justify-content: center;
+}
+
+
