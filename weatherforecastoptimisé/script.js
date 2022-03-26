@@ -10,9 +10,9 @@ const DAYSELECTOR = document.querySelector('#day-select');
 
 //weather open
 
-const APIKEY_WEATHER_2="e8e1dcbb0559820ba96f6138b409eaa2" // compte Jeromalo si blocage sur l'autre KEY
-const APIKEY_WEATHER="1a78f3239a7008102b6a6cf133376c27" // compte bertrand.jf
-const APIKEY_NASA="mSJwdJgOMfEzGHGixyMLC3uUPm4e96C8wa23nylE" // compte bertrand.jf
+const APIKEY_WEATHER_2="" // compte Jeromalo si blocage sur l'autre KEY //ask for codes
+const APIKEY_WEATHER="" // compte bertrand.jf //ask for codes
+const APIKEY_NASA="" // compte bertrand.jf //ask for codes
 
 var openweather_url = "https://api.openweathermap.org/data/2.5/onecall"
 var openweather_city_url = "https://api.openweathermap.org/data/2.5/weather"
@@ -22,7 +22,7 @@ var horoscope_url = 	"https://ohmanda.com/api/horoscope/"
 
 //opencage
 
-const APIKEY_OPENCAGE="ae2305116a7b4396ad54cb2166eef2ec"
+const APIKEY_OPENCAGE="" //ask for codes
 
 var opencage_url = "https://api.opencagedata.com/geocode/v1/json"
 
