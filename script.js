@@ -24,14 +24,14 @@ const OUTPUTICON4= document.querySelector("#iconID4")
 
 //weather open
 
-const APIKEY_WEATHER="e8e1dcbb0559820ba96f6138b409eaa2"
+const APIKEY_WEATHER="" //ask for the code if you want
 
 var openweather_url = "https://api.openweathermap.org/data/2.5/onecall"
 var icon_url = "http://openweathermap.org/img/wn/"
 
 //opencage
 
-const APIKEY_OPENCAGE="ae2305116a7b4396ad54cb2166eef2ec"
+const APIKEY_OPENCAGE=""//ask for the code if you want
 
 var opencage_url = "https://api.opencagedata.com/geocode/v1/json"
 
